@@ -1,0 +1,7 @@
+<nav class="navbar navbar-light bg-dark nav-custom">
+    <span class="mb-0 h3">Shop-App</span>
+    <span class="cart-icon" (click)="goToCart($event)">
+        <i class="fa fa-shopping-cart"></i>
+        <span class="count" *ngIf="cartList.length>0">{{cartList.length}}</span>
+    </span>
+</nav>
