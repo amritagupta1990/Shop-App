@@ -1,0 +1,28 @@
+<table class="table">
+    <thead>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Stock Available</th>
+        <th>Actions</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let el of productList">
+            <td>
+                {{el.name}}
+            </td>
+            <td>
+                {{el.description}}
+            </td>
+            <td>
+                {{el.price}}
+            </td>
+            <td>
+                {{el.stock}}
+            </td>
+            <td>
+                <button class="btn btn-primary" (click)="addToCart($event, el)">Add to Cart</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

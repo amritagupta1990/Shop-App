@@ -1,0 +1,25 @@
+<table class="table">
+    <thead>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Actions</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let el of cartList">
+            <td>
+                {{el.name}}
+            </td>
+            <td>
+                {{el.description}}
+            </td>
+            <td>
+                {{el.price}}
+            </td>
+            <td>
+                <button class="btn btn-primary" (click)="removeFromCart($event, el)">Remove from Cart</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div><button class="btn btn-primary" routerLink="/product-list">Back To Product List</button></div>
