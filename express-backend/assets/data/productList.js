@@ -35,7 +35,7 @@ module.exports = [
         "description": "Sliced and served with your salad. Served as snacks midway through the day."
     },
     {
-        "id": 5,
+        "id": 6,
         "name": "Sharifa",
         "price": 10.33,
         "stock": 30,

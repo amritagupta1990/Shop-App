@@ -6,6 +6,7 @@ import { Product } from "../models/product.model";
 export class ApiService{
     constructor(private http: HttpClient){}
     getProductList():Observable<Product[]>{
-        return this.http.get<Product[]>('http://localhost:5002/product-list').pipe(map(data=>data));
+        return this.http.get<Product[]>('http://localhost:5002/product-list').pipe(map(data=>data)); 
+        //return this.http.get<Product[]>('http://localhost:5002/product-list-dynamic').pipe(map(data=>data)); //use for fetching dynamic data data
     }
 }
