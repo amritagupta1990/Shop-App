@@ -16,6 +16,14 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 For API, Express app has been created inside project root folder. /express-backend
 
+## steps to start express server
+
+1. go to the express-backend folder, cd express-backend
+2. run npm start
+3. serve will start on http://localhost:5002
+
+For Dynamic Data, need to set up mysql work bench locally. 
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
